@@ -1,4 +1,4 @@
-// src/routes/api.js
+// routes/api.js
 const express = require('express');
 const router = express.Router();
 const harController = require('../controllers/harController');

@@ -1,8 +1,8 @@
-// src/index.js
+// index.js
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const apiRoutes = require('./src/routes/api');
+const apiRoutes = require('./routes/api');
 
 // Load environment variables
 dotenv.config();
