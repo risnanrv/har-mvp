@@ -7,7 +7,7 @@ const Sidebar = ({ onLoadWebsite }) => {
   const [url, setUrl] = useState('');
   const [loadingWebsite, setLoadingWebsite] = useState(false);
   const [capturingHar, setCapturingHar] = useState(false);
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://har-mvp.onrender.com';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -97,7 +97,6 @@ const Sidebar = ({ onLoadWebsite }) => {
     
     // Here we just confirm the file was selected
     // Actual parsing functionality can be added later
-    alert(`Selected file: ${file.name}. HAR parsing functionality will be added later.`);
     
     // Reset the file input
     e.target.value = null;
